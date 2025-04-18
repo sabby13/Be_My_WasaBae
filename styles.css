@@ -194,3 +194,52 @@ button {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 20px 0;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 15px 20px;
+    margin: 15px;
+  }
+
+  #popup-img {
+    width: 90vw;       /* Fit within screen */
+    height: auto;
+  }
+
+  #response {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  #secret-btn {
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+  }
+
+  #goma-gif {
+    width: 200px;
+  }
+
+  .heart {
+    width: 80px;
+  }
+
+  .sakura {
+    width: 40px;
+    height: 40px;
+  }
+}
+
