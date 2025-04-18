@@ -4,10 +4,12 @@ This is an adorable interactive webpage designed to charm your favorite person w
 **"Would YOU go to a Sushi Restaurant with ME?"**
 
 ## 📸Preview
+![Screenshot 2025-04-18 150105](https://github.com/user-attachments/assets/a4dfbad9-6eec-4817-83c3-7aeeffa682f6)
+
 
 ## 💡 Features
-- 🟥 **YES button** triggers a burst of hearts, a sweet message, and a surprise GIF
-- 🟧 **NO button** runs away when hovered—hard to say no to love!
+- ✅  **YES button** triggers a burst of hearts, a sweet message, and a surprise GIF
+- ❌ **NO button** runs away when hovered—hard to say no to love!
 - 💌 **Secret button** appears after the YES path, revealing a pop-up image surprise
 - 🌸 **Sakura petals** gently fall in the background for vibes
 
