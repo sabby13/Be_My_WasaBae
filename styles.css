@@ -1,0 +1,196 @@
+
+body {
+    font-family: 'Fraunces', serif;
+    
+    font-variation-settings: 
+      "SOFT" 10.6,   /* softness/roundness */
+      "WONK" 0;      /* optical size (0..144) */
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  
+  .fraunces {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 10.6, "WONK" 0;
+  }
+  
+
+
+
+
+body {
+    background-color: #efbec5;
+    overflow: hidden; /* Prevents scrollbars from petal animations */
+}
+
+.sakura {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-image: url('sakura.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.container {
+    margin-top: 100px;
+}
+
+button {
+    font-size: 22px;
+    padding: 25px 27px;
+    margin: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#yes-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#no-btn {
+    background-color: #FF6347;
+    color: white;
+    position: absolute;
+    transition: transform 0.3s ease-out; 
+}
+
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+    pointer-events: none;
+}
+
+
+.heart {
+    position: absolute;
+    width: 130px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+#gif-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#goma-gif {
+    max-width: 100%;
+    width: 300px;
+}
+
+#response {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none; /* Hidden initially */
+    opacity: 0;
+}
+
+#secret-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+    z-index: 1001; 
+    bottom: 1px;
+    right:500px;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(211, 211, 211, 0.7); 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#popup {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    animation: fadeIn 0.4s ease-in;
+}
+
+#popup-img {    
+    max-width: none;
+    max-height: none;
+
+    width: 600px;      
+    height: 830px;      
+
+    border-radius: 10px;
+}
+
+#close-popup {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size:  75px;  
+    color: rgb(51, 48, 48); 
+    line-height: 1;        
+    width: 1em;            
+    height: 1em;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
